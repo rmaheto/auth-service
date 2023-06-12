@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:mysql://flightrsvdb.cxnuarwowrnu.us-east-1.rds.amazonaws.com:3306/auth-db
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8091
+  servlet:
+    context-path: "/api/v1"
+
+app:
+  jwtSecret: codemaniac
+  jwtExpirationMs: 86400000
